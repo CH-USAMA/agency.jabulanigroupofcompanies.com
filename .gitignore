@@ -1,0 +1,99 @@
+# ═══════════════════════════════════════════════════════
+# .gitignore — Jabulani Tech Solutions Agency Site
+# Pure HTML / CSS / JS / PHP — Hostinger shared hosting
+# ═══════════════════════════════════════════════════════
+
+
+# ── AI / editor tool folders ────────────────────────────
+.refact/
+
+
+# ── Design source files (large binaries) ────────────────
+design.zip
+design.md
+*.zip
+*.rar
+*.tar
+*.gz
+
+
+# ── Old reference code (not part of the live site) ──────
+JabuliQuarry_Portfolio/
+
+
+# ── PHP runtime artefacts ───────────────────────────────
+*.log
+php_errors.log
+error_log
+
+
+# ── Environment / secrets ────────────────────────────────
+# NOTE: form.php contains SMTP credentials — do NOT commit
+# it to a public repo. Consider moving credentials to a
+# separate secrets file excluded here, then including that
+# file on the server via Hostinger File Manager manually.
+.env
+.env.*
+secrets.php
+config.local.php
+
+
+# ── Windows OS files ────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+
+# ── macOS files ──────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+
+
+# ── VSCode ───────────────────────────────────────────────
+.vscode/
+*.code-workspace
+
+
+# ── JetBrains IDEs ───────────────────────────────────────
+.idea/
+*.iml
+*.iws
+
+
+# ── Sublime Text ─────────────────────────────────────────
+*.sublime-project
+*.sublime-workspace
+
+
+# ── Node (in case build tools are ever added) ────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+dist/
+.cache/
+
+
+# ── Composer (PHP package manager) ───────────────────────
+vendor/
+composer.lock
+
+
+# ── Backup / temp files created by editors ───────────────
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
