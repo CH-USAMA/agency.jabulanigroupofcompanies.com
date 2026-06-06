@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jabulani Crush &amp; Quarry — Case Study | Jabulani Tech Solutions</title>
+  <meta name="description" content="How Jabulani Tech Solutions built a professional quarry website with dark mode, photo gallery, and SEO for an Eastern Cape mining company.">
+  <link rel="canonical" href="https://agency.jabulanigroupofcompanies.co.za/project-quarry.html">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/project.css">
+  <script>
+    (function(){
+      var s = localStorage.getItem('jts-theme');
+      var d = s ? s === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (d) document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="cursor-dot"      id="cursorDot"      aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower"  aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"  aria-hidden="true"></div>
+
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Jabulani Tech Solutions — Home">
+        <img src="images/logo.png" alt="Jabulani logo" width="36" height="36" onerror="this.style.display='none'">
+        <div class="nav__brand-text">
+          <span class="nav__brand-name">Jabulani <strong>Tech</strong></span>
+          <span class="nav__brand-sub">Solutions</span>
+        </div>
+      </a>
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="btn btn--primary nav__cta" href="index.html#contact">Get a Quote</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon" id="themeIcon" aria-hidden="true"></i>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html#services" data-mobile-link>Services</a>
+      <a href="index.html#portfolio" data-mobile-link>Portfolio</a>
+      <a href="index.html#about" data-mobile-link>About</a>
+      <a href="index.html#contact" data-mobile-link>Contact</a>
+      <a class="btn btn--primary" href="index.html#contact" data-mobile-link>Get a Free Quote</a>
+      <button class="theme-toggle theme-toggle--mobile" id="themeToggleMobile">
+        <i class="fa-solid fa-moon" id="themeIconMobile"></i>
+        <span id="themeLabel">Switch to dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PROJECT HERO -->
+    <section class="project-hero">
+      <div class="container">
+        <a class="project-hero__back" href="index.html#portfolio">
+          <i class="fa-solid fa-arrow-left"></i> All Projects
+        </a>
+        <div class="project-hero__tags">
+          <span>Web Design</span>
+          <span>SEO</span>
+          <span>Dark Mode</span>
+        </div>
+        <h1 class="project-hero__title">Jabulani Crush &amp; Quarry</h1>
+        <p class="project-hero__sub">A professional digital presence for an Eastern Cape mining company — built to rank, built to impress.</p>
+        <div class="project-hero__meta">
+          <div class="project-meta-item">
+            <span class="project-meta-item__label">Client</span>
+            <span class="project-meta-item__value">Jabulani Group of Companies</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-item__label">Industry</span>
+            <span class="project-meta-item__value">Open-cast Mining</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-item__label">Location</span>
+            <span class="project-meta-item__value">Tsolo, Eastern Cape, SA</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-item__label">Live Site</span>
+            <a class="project-meta-item__value project-meta-item__link" href="https://jabulaniquarriestsolo.co.za/" target="_blank" rel="noopener noreferrer">
+              jabulaniquarriestsolo.co.za <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOCKUP IMAGE -->
+    <section class="project-mockup">
+      <div class="container">
+        <div class="project-mockup__frame" data-animate>
+          <img src="images/project-quarry.svg" alt="Jabulani Quarries website design preview" width="960" height="560">
+        </div>
+      </div>
+    </section>
+
+    <!-- CHALLENGE / SOLUTION -->
+    <section class="section section--white">
+      <div class="container project-detail-layout">
+
+        <div class="project-detail-col" data-animate>
+          <div class="section-tag">The Challenge</div>
+          <h2 class="project-section-title">An Industry Giant with No Online Presence</h2>
+          <p>Jabulani Crush &amp; Quarry had been operating in Tsolo for years — supplying aggregate to construction companies across the Eastern Cape — but had zero digital footprint. Potential clients couldn't find them, and the company relied entirely on word-of-mouth referrals.</p>
+          <p>The brief was clear: build a site that would rank on Google for quarry-related searches in the Eastern Cape, showcase their services and capabilities, and make it easy for contractors to get in touch.</p>
+        </div>
+
+        <div class="project-detail-col" data-animate data-delay="2">
+          <div class="section-tag">Our Solution</div>
+          <h2 class="project-section-title">SEO-First Design, Built to Last</h2>
+          <p>We designed and built a fully custom website from scratch — no templates. The site was structured with clear service pages optimised for location-based search terms, a photo gallery showcasing their fleet and operations, and a dark mode UI that sets them apart visually.</p>
+          <p>Every page was built with semantic HTML, schema markup, and mobile performance in mind from day one.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag">What We Built</span>
+          <h2 class="section-title">Key Features</h2>
+        </div>
+        <div class="project-features-grid">
+          <div class="project-feature" data-animate data-delay="1">
+            <div class="card__icon-wrap"><i class="fa-solid fa-moon"></i></div>
+            <h3>Dark Mode UI</h3>
+            <p>A bold, dark-themed design with red accents that matches the industrial nature of the business.</p>
+          </div>
+          <div class="project-feature" data-animate data-delay="2">
+            <div class="card__icon-wrap"><i class="fa-solid fa-images"></i></div>
+            <h3>Photo Gallery</h3>
+            <p>A filterable gallery showcasing equipment, operations, and completed projects to build trust with contractors.</p>
+          </div>
+          <div class="project-feature" data-animate data-delay="3">
+            <div class="card__icon-wrap"><i class="fa-solid fa-search"></i></div>
+            <h3>Local SEO</h3>
+            <p>Optimised for Eastern Cape quarry keywords, Google Business Profile integration, and schema markup.</p>
+          </div>
+          <div class="project-feature" data-animate data-delay="1">
+            <div class="card__icon-wrap"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Mobile-First</h3>
+            <p>Fully responsive and fast-loading on all devices — essential for contractors browsing on-site.</p>
+          </div>
+          <div class="project-feature" data-animate data-delay="2">
+            <div class="card__icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Contact &amp; Quote Forms</h3>
+            <p>Multiple contact touchpoints make it simple for potential clients to request quotes or ask questions.</p>
+          </div>
+          <div class="project-feature" data-animate data-delay="3">
+            <div class="card__icon-wrap"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>Performance Optimised</h3>
+            <p>Compressed assets, lazy-loaded images, and clean code deliver fast load times even on mobile data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag">The Results</span>
+          <h2 class="section-title">Online. Discoverable. Growing.</h2>
+        </div>
+        <div class="project-results-grid">
+          <div class="project-result" data-animate data-delay="1">
+            <span class="project-result__number">100%</span>
+            <span class="project-result__label">Custom design — zero templates</span>
+          </div>
+          <div class="project-result" data-animate data-delay="2">
+            <span class="project-result__number">Page 1</span>
+            <span class="project-result__label">Google ranking for target keywords</span>
+          </div>
+          <div class="project-result" data-animate data-delay="3">
+            <span class="project-result__number">Mobile</span>
+            <span class="project-result__label">Optimised for all screen sizes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="cta-banner__glow" aria-hidden="true"></div>
+      <div class="container cta-banner__inner" data-animate>
+        <div class="cta-banner__copy">
+          <h2>Want Something Like This?</h2>
+          <p>Tell us about your business and we'll build a digital presence that works as hard as you do.</p>
+        </div>
+        <a class="btn btn--white btn--lg" href="index.html#contact">
+          Start Your Project <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- OTHER PROJECTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag">More Work</span>
+          <h2 class="section-title">Other Projects</h2>
+        </div>
+        <div class="portfolio-grid">
+          <article class="card card--portfolio" data-animate data-delay="1">
+            <div class="card__media">
+              <span class="portfolio-live-badge"><span class="live-dot"></span> Live</span>
+              <img src="images/project-pos.svg" alt="Jabulani POS" loading="lazy" width="480" height="280">
+            </div>
+            <div class="card__body">
+              <div class="portfolio-tags"><span>Custom Software</span><span>POS</span></div>
+              <h3>Jabulani Point of Sale</h3>
+              <p>Custom POS system with inventory management and sales reporting.</p>
+              <a class="link-arrow" href="project-pos.html">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="card card--portfolio" data-animate data-delay="2">
+            <div class="card__media">
+              <span class="portfolio-live-badge"><span class="live-dot"></span> Live</span>
+              <img src="images/project-store.svg" alt="Jabulani Store" loading="lazy" width="480" height="280">
+            </div>
+            <div class="card__body">
+              <div class="portfolio-tags"><span>E-commerce</span><span>Web Design</span></div>
+              <h3>Jabulani Store</h3>
+              <p>A fully crafted e-commerce store with cart, checkout, and payment integration.</p>
+              <a class="link-arrow" href="project-store.html">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom">
+        <p>&copy; 2024 Jabulani Tech Solutions. Part of <a href="https://jabulanigroupofcompanies.co.za/" target="_blank" rel="noopener noreferrer">Jabulani Group of Companies</a>.</p>
+        <p><a href="index.html">Back to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/27660684585?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20IT%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Jabulani Tech Solutions</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){
+      var s = localStorage.getItem('jts-theme');
+      var d = s ? s === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (d) document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
+  <style>
+    .page-404 {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      background: var(--color-fog);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-404__glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(70,65,240,0.10) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .page-404__number {
+      font-size: clamp(96px, 18vw, 180px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -6px;
+      color: var(--color-accent);
+      opacity: 0.18;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .page-404__content {
+      position: relative;
+      z-index: 1;
+      max-width: 520px;
+    }
+
+    .page-404__icon {
+      width: 72px;
+      height: 72px;
+      background: var(--color-accent-tint);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: var(--color-accent);
+      margin: 0 auto 32px;
+    }
+
+    .page-404__title {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      color: var(--color-ink);
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .page-404__sub {
+      font-size: 17px;
+      font-weight: 300;
+      color: var(--color-graphite);
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .page-404__actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .page-404__links {
+      margin-top: 48px;
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .page-404__links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-graphite);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--duration-fast) var(--ease);
+    }
+
+    .page-404__links a:hover { color: var(--color-accent); }
+    .page-404__links a i { font-size: 11px; }
+
+    /* countdown bar */
+    .page-404__countdown {
+      margin-top: 32px;
+      font-size: 12px;
+      color: var(--color-graphite);
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cursor-dot"      id="cursorDot"      aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower"  aria-hidden="true"></div>
+
+  <main class="page-404" role="main">
+    <div class="page-404__glow" aria-hidden="true"></div>
+    <div class="page-404__number" aria-hidden="true">404</div>
+
+    <div class="page-404__content">
+      <div class="page-404__icon" aria-hidden="true">
+        <i class="fa-solid fa-compass-drafting"></i>
+      </div>
+
+      <h1 class="page-404__title">This Page Doesn't Exist</h1>
+      <p class="page-404__sub">
+        The page you're looking for may have been moved, renamed, or never existed. Let's get you back on track.
+      </p>
+
+      <div class="page-404__actions">
+        <a class="btn btn--primary btn--lg" href="index.html">
+          <i class="fa-solid fa-house" aria-hidden="true"></i> Back to Home
+        </a>
+        <a class="btn btn--ghost btn--lg" href="index.html#contact">
+          Contact Us
+        </a>
+      </div>
+
+      <nav class="page-404__links" aria-label="Quick links">
+        <a href="index.html#services">
+          <i class="fa-solid fa-bolt"></i> Services
+        </a>
+        <a href="index.html#portfolio">
+          <i class="fa-solid fa-grid-2"></i> Portfolio
+        </a>
+        <a href="index.html#about">
+          <i class="fa-solid fa-users"></i> About
+        </a>
+        <a href="index.html#contact">
+          <i class="fa-solid fa-envelope"></i> Contact
+        </a>
+      </nav>
+
+      <p class="page-404__countdown" id="countdown">
+        Redirecting to home in <span id="countSec">10</span>s…
+      </p>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* Auto-redirect countdown */
+    (function () {
+      var sec = 10;
+      var el  = document.getElementById('countSec');
+      var t   = setInterval(function () {
+        sec--;
+        if (el) el.textContent = sec;
+        if (sec <= 0) {
+          clearInterval(t);
+          window.location.replace('index.html');
+        }
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>

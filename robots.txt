@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /form.php
+
+Sitemap: https://agency.jabulanigroupofcompanies.co.za/sitemap.xml
