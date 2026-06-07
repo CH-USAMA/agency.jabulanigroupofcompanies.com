@@ -1500,7 +1500,7 @@ p {
 .form-group textarea:focus {
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px var(--color-accent-mid);
-  background: #fff;
+  background-color: #fff;
 }
 
 .form-group select {
@@ -1928,7 +1928,7 @@ p {
 [data-theme="dark"] .form-group input,
 [data-theme="dark"] .form-group select,
 [data-theme="dark"] .form-group textarea {
-  background: var(--color-fog);
+  background-color: var(--color-fog);
   border-color: var(--color-border-light);
   color: var(--color-ink);
 }
@@ -1936,7 +1936,7 @@ p {
 [data-theme="dark"] .form-group input:focus,
 [data-theme="dark"] .form-group select:focus,
 [data-theme="dark"] .form-group textarea:focus {
-  background: var(--surface-card);
+  background-color: var(--surface-card);
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px var(--color-accent-mid);
 }
