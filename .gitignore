@@ -6,6 +6,7 @@
 
 # ── AI / editor tool folders ────────────────────────────
 .refact/
+.claude/
 
 
 # ── Design source files (large binaries) ────────────────
