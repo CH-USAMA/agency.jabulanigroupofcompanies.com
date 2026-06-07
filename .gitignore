@@ -28,10 +28,12 @@ error_log
 
 
 # ── Environment / secrets ────────────────────────────────
-# NOTE: form.php contains SMTP credentials — do NOT commit
-# it to a public repo. Consider moving credentials to a
-# separate secrets file excluded here, then including that
-# file on the server via Hostinger File Manager manually.
+# NOTE: SMTP credentials live in secrets.php (loaded by form.php),
+# NOT in form.php itself — form.php is now safe to commit/publish.
+# secrets.php holds the real password and must stay untracked;
+# upload it to the server by hand (Hostinger File Manager / FTP).
+# secrets.example.php is the committed template with placeholder
+# values — copy it to secrets.php and fill in real credentials.
 .env
 .env.*
 secrets.php

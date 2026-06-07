@@ -20,13 +20,19 @@ if (!empty($_POST['_honeypot'])) {
 }
 
 /* ── SMTP CONFIG ───────────────────────────────────── */
-define('SMTP_HOST', 'smtp.hostinger.com');
-define('SMTP_PORT', 587);
-define('SMTP_USER', 'info@jabulanigroupofcompanies.co.za');
-define('SMTP_PASS', 'cQzPU6C7XVk!t89');
-define('FROM_NAME', 'Jabulani Tech Solutions');
-define('FROM_ADDR', 'info@jabulanigroupofcompanies.co.za');
-define('TO_ADDR',   'info@jabulanigroupofcompanies.co.za');
+/* Real credentials live in secrets.php, which is gitignored and never
+   committed. Copy secrets.example.php to secrets.php and fill in the
+   real values, then upload it to the server by hand (not via Git). */
+$secrets_file = __DIR__ . '/secrets.php';
+if (!file_exists($secrets_file)) {
+    http_response_code(500);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Server configuration error. Please email us directly at info@jabulanigroupofcompanies.co.za or call (+27) 660 684 585.',
+    ]);
+    exit;
+}
+require $secrets_file;
 
 /* ── SANITISE INPUT ────────────────────────────────── */
 $name     = trim(htmlspecialchars(strip_tags($_POST['name']     ?? ''), ENT_QUOTES, 'UTF-8'));
