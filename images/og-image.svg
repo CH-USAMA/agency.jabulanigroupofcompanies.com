@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e0e15"/>
+      <stop offset="100%" stop-color="#17173a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4641f0"/>
+      <stop offset="100%" stop-color="#7c70f5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#4641f0" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#4641f0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Dot grid pattern -->
+  <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="1.5" cy="1.5" r="1.5" fill="rgba(109,104,245,0.18)"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#accent)"/>
+
+  <!-- Logo mark -->
+  <rect x="72" y="72" width="56" height="56" rx="14" fill="#4641f0"/>
+  <rect x="84" y="84" width="32" height="32" rx="6" fill="rgba(255,255,255,0.25)"/>
+  <rect x="90" y="90" width="20" height="20" rx="3" fill="rgba(255,255,255,0.85)"/>
+
+  <!-- Brand name -->
+  <text x="148" y="104" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Jabulani Tech Solutions</text>
+  <text x="149" y="126" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="rgba(255,255,255,0.45)" letter-spacing="0.04em">agency.jabulanigroupofcompanies.co.za</text>
+
+  <!-- Main headline -->
+  <text x="72" y="290" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="76" font-weight="700" fill="#ffffff" letter-spacing="-3">Build.</text>
+  <text x="72" y="380" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="76" font-weight="700" fill="#ffffff" letter-spacing="-3">Launch.</text>
+  <text x="72" y="470" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="76" font-weight="700" fill="url(#accent)" letter-spacing="-3">Grow.</text>
+
+  <!-- Subheading -->
+  <text x="72" y="535" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="rgba(255,255,255,0.60)">Web Design · POS Systems · AI Automation · Digital Marketing</text>
+  <text x="72" y="568" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="rgba(255,255,255,0.40)">South Africa's local IT team — real projects, live results.</text>
+
+  <!-- Right side: service pills -->
+  <rect x="820" y="220" width="308" height="44" rx="22" fill="rgba(70,65,240,0.22)" stroke="rgba(70,65,240,0.50)" stroke-width="1.5"/>
+  <text x="974" y="248" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="500" fill="rgba(255,255,255,0.85)" text-anchor="middle">Web Design &amp; Development</text>
+
+  <rect x="860" y="282" width="228" height="44" rx="22" fill="rgba(70,65,240,0.16)" stroke="rgba(70,65,240,0.35)" stroke-width="1.5"/>
+  <text x="974" y="310" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="500" fill="rgba(255,255,255,0.75)" text-anchor="middle">POS &amp; Business Software</text>
+
+  <rect x="840" y="344" width="268" height="44" rx="22" fill="rgba(70,65,240,0.16)" stroke="rgba(70,65,240,0.35)" stroke-width="1.5"/>
+  <text x="974" y="372" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="500" fill="rgba(255,255,255,0.75)" text-anchor="middle">SEO &amp; Digital Marketing</text>
+
+  <rect x="870" y="406" width="208" height="44" rx="22" fill="rgba(70,65,240,0.16)" stroke="rgba(70,65,240,0.35)" stroke-width="1.5"/>
+  <text x="974" y="434" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="500" fill="rgba(255,255,255,0.75)" text-anchor="middle">AI Automation</text>
+
+  <rect x="848" y="468" width="252" height="44" rx="22" fill="rgba(70,65,240,0.16)" stroke="rgba(70,65,240,0.35)" stroke-width="1.5"/>
+  <text x="974" y="496" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="500" fill="rgba(255,255,255,0.75)" text-anchor="middle">Marketing Pipelines</text>
+
+  <!-- Live badge -->
+  <circle cx="844" cy="180" r="6" fill="#4ade80"/>
+  <text x="858" y="186" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#4ade80">4 live projects built</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="625" width="1200" height="5" fill="url(#accent)"/>
+</svg>

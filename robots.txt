@@ -1,5 +1,12 @@
 User-agent: *
 Allow: /
 Disallow: /form.php
+Disallow: /404.html
+Disallow: /.htaccess
+Disallow: /.git/
+Disallow: /.refact/
+
+# Crawl delay for polite crawling
+Crawl-delay: 10
 
 Sitemap: https://agency.jabulanigroupofcompanies.co.za/sitemap.xml
