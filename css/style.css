@@ -504,11 +504,12 @@ p {
   justify-content: center;
 }
 
-.theme-toggle--mobile {
+.theme-toggle.theme-toggle--mobile {
   display: flex;
   align-items: center;
   gap: var(--sp-10, 10px);
   width: 100%;
+  height: auto;
   padding: 12px 8px;
   border-radius: 10px;
   font-size: 15px;
